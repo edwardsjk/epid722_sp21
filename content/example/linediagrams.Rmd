@@ -1,0 +1,141 @@
+---
+title: "Line Diagrams"
+linktitle: "Line Diagrams"
+output:
+  blogdown::html_page:
+    toc: true
+    toc_depth: 1
+menu:
+  example:
+    parent: Examples
+    weight: 1
+type: docs
+editor_options: 
+  chunk_output_type: console
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Why would I need code for a line diagram?
+
+Line diagrams are easy to draw by hand, but can get unwieldy for real datasets. But sometimes plotting the line diagram can be useful. This includes settings when you want a quick visual check of
+
+- the administrative censoring date
+- the presence of late entry
+- the maximum follow-up time
+- etc
+
+
+## R code to produce line diagrams
+
+### Simple simulated data (used in L1)
+
+First, we generate simple data on 20 participants as describe by L1:
+
+> "Say you wish to estimate the 5-year risk of death among people entering HIV care. You have a database of people entering HIV care between 2012 and 2020."
+
+
+```{r message=FALSE, warning=FALSE}
+### Generate some data -----
+require(dplyr)
+set.seed(123)
+year0 <- runif(20, min=2012, max = 2020)
+t <- runif(20, min=2, max = 15)
+dat <- data.frame(year0, t)
+
+
+dat <- dat %>% mutate(y=ifelse(t+year0>2020 | t>5, 0, 1),
+                      t = ifelse(t+year0>2020, 2020-year0, t), 
+                      t = ifelse(t>5, 5, t),
+                      id = row_number())
+
+dat
+```
+
+Produce the line diagram by creating line segments and points in `ggplot`.
+
+```{r message=FALSE, warning=FALSE}
+
+# Calendar time as timescale
+library(grid)
+library(ggthemr)
+ggthemr('solarized')
+line <- ggplot() +
+  geom_segment(data = dat %>% filter(y==0), aes(x = year0, y = id, xend = year0+t, yend = id),  arrow = arrow(length = unit(0.1, "cm"))) +
+  geom_segment(data = dat %>% filter(y==1), aes(x = year0, y = id, xend = year0+t, yend = id)) +
+  scale_y_continuous(name = "ID", breaks = c(1, 5, 10, 15, 20), limits = c(0,20))+
+  scale_x_continuous(name = "Calendar Time", breaks=c(2012, 2014, 2016, 2018,  2020), limits = c(2012, 2021)) +
+  geom_point(data = dat %>% filter(y==1), aes(x = year0+t, y = id), color = "red", size = 0.6) +
+  theme(text = element_text(size = 14, family = "Open Sans"))
+
+line
+```
+
+Reorganize plot to show time since entry into HIV care on the `x`-axis.
+
+```{r message=FALSE, warning=FALSE}
+
+# Calendar time as timescale
+line2 <- ggplot() +
+  geom_segment(data = dat %>% filter(y==0), aes(x = 0, y = id, xend = t, yend = id),  arrow = arrow(length = unit(0.1, "cm"))) +
+  geom_segment(data = dat %>% filter(y==1), aes(x = 0, y = id, xend = t, yend = id)) +
+  scale_y_continuous(name = "ID", breaks = c(1, 5, 10, 15, 20), limits = c(0,20))+
+  scale_x_continuous(name = "Calendar Time", breaks=c(0, 1, 2, 3, 4, 5), limits = c(0, 6)) +
+  geom_point(data = dat %>% filter(y==1), aes(x = t, y = id), color = "red", size = 0.6) +
+  theme(text = element_text(size = 14, family = "Open Sans"))
+
+line2
+```
+
+### Example data (similar to Cole & Hudgens 2010)
+
+Next, we read in some sample data similar to that used in Cole & Hudgens 2010.
+
+```{r echo=FALSE, message=FALSE, warning=FALSE}
+### Read in data -----
+library(grid)
+library(ggthemr)
+ggthemr('solarized')
+exdat <- read.csv("../../static/data/exdat.csv", header = TRUE)
+head(exdat)
+
+```
+
+### Calendar timescale
+
+```{r, warning=FALSE}
+
+### Create second dataset with only events ------
+exdat2 <- exdat[exdat$d == 1, ]
+
+### Plot the lines -----
+line <- ggplot(data = exdat) +
+  geom_segment(aes(x = year, y = newid, xend = yearw, yend = newid), lty = "dotted") +
+  geom_segment(aes(x = yearw, y = newid, xend = yeart, yend = newid)) +
+  ylab("ID") +
+  scale_x_continuous(name = "Calendar Time", breaks=c(2010, 2015,  2020)) +
+  geom_point(data = exdat2, aes(x = yeart, y = newid), color = "red", size = 0.5) +
+  theme(text = element_text(size = 16, family = "Open Sans"))
+
+line
+
+```
+
+
+### Time since AIDS diagnosis
+
+```{r, warning=FALSE}
+line2 <- ggplot(data = exdat) +
+  geom_segment(aes(x = 0, y = newid, xend = w, yend = newid), lty = "dotted") +
+  geom_segment(aes(x = w, y = newid, xend = t, yend = newid)) +
+  ylab("ID") +
+  scale_x_continuous(name = "Time since AIDS diagnosis", breaks = c(0,2, 4, 6, 8, 10)) +
+  geom_point(data = exdat2, aes(x = t, y = newid), color = "red", size = 0.5) +
+  
+  theme(text = element_text(size = 14, family = "Open Sans"))
+
+line2
+```
+

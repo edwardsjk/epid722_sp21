@@ -1,0 +1,11 @@
+---
+title: Resources and example code
+# menu:
+#   example:
+#     parent: Overview
+#     weight: 1
+type: docs
+weight: 1
+---
+
+This section contains various resources and code snippets that may be useful during this course or beyond. I will update this page with additional resources and examples as they become relevant. 

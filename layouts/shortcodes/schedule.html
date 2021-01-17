@@ -1,0 +1,61 @@
+<table class="table schedule" style="max-width:100%">
+    <tbody>
+
+        {{- range .Site.Data.schedule }}
+        {{- range . }}
+        <tr
+            class="{{- if .bottomborder }} section-bottom {{- end }}{{- if .header }} fake-header-table {{- end }}{{- if .bg }} schedule-bg-{{ .bg }} {{- end }}">
+            <td align="right" style="width:20%;text-align:right">
+                <strong>{{ .date }}</strong>{{- if and (.session) (.date) }}<br>{{- end }}{{- if .session }}
+                <small>({{.session}})</small>{{- end }}</td>
+            <td style="width:56%;text-align:left">{{ .title | markdownify }}</td>
+
+            {{- if .header }}
+
+            <td style="width:8%;text-align:center" class="mid-table-header">Content</td>
+            <td style="width:8%;text-align:center" class="mid-table-header">Reading</td>
+            <td style="width:8%;text-align:center" class="mid-table-header">Exercise</td>
+
+            {{- else }}
+
+            {{- if .class }}
+            <td align="center" style="width:10%;text-align:center"><a
+                    href="{{ .Site.baseurl }}/content/{{ .class }}/">
+                    <i class="fas fa-laptop-code fa-lg"></i></a></td>
+            {{- else }}
+            <td align="center" style="width:10%;text-align:center">
+                <font color="f1f1f1">
+                    <i class="fas fa-laptop-code fa-lg"></i></font>
+            </td>
+            {{- end }}
+
+            {{- if .reading }}
+            <td align="center" style="width:10%;text-align:center"><a
+                    href="https://{{ .reading }}" >
+                    <i class="fas fa-book-reader fa-lg"></i></a></td>
+            {{- else }}
+            <td align="center" style="width:10%;text-align:center">
+                <font color="f1f1f1">
+                    <i class="fas fa-book-reader fa-lg"></i></font>
+            </td>
+            {{- end }}
+
+            {{- if .assignment }}
+            <td align="center" style="width:10%;text-align:center"><a
+                    href="https://adminliveunc.sharepoint.com/sites/EPID7222021/Class%20Materials/Forms/AllItems.aspx?newTargetListUrl=%2Fsites%2FEPID7222021%2FClass%20Materials&viewpath=%2Fsites%2FEPID7222021%2FClass%20Materials%2FForms%2FAllItems%2Easpx&viewid=23791aee%2D5f6d%2D4b22%2Da7b3%2D738269b4e786&id=%2Fsites%2FEPID7222021%2FClass%20Materials%2FExercises">
+                    <i class="fas fa-pencil-ruler fa-lg"></i></a></td>
+            {{- else }}
+            <td align="center" style="width:10%;text-align:center">
+                <font color="f1f1f1">
+                    <i class="fas fa-pencil-ruler fa-lg"></i></font>
+            </td>
+            {{- end }}
+
+            {{- end }}
+        </tr>
+        {{- end }}
+        {{- end }}
+
+    </tbody>
+
+</table>

@@ -1,0 +1,109 @@
+---
+title: Syllabus
+slug: syllabus
+citeproc: true
+bibliography: ../../static/bib/references.bib
+csl: ../../static/bib/chicago-syllabus-no-bib.csl
+output:
+  blogdown::html_page:
+    toc: true
+    fig_caption: false
+---
+
+```{r setup, message=FALSE, warning=FALSE, include=FALSE}
+library(dplyr)
+library(tibble)
+library(pander)
+```
+
+`r blogdown::shortcode("courseinfo")`
+
+## Teaching Assistants
+
+1. Rachael Ross (rkross@live.unc.edu)
+2. Linnea Olsson (lolsson@live.unc.edu)
+
+## Course objectives
+
+1.	Build competence in asking and answering important public health questions 
+2.	Understand and appreciate time in epidemiologic studies
+3.	Address threats to accuracy in epidemiologic studies
+
+## Course structure
+
+Each topic will be covered during 2 course periods. The first (typically Tuesdays, but occasionally Thursdays due to university "wellness days") will be reserved for short, modular lectures, initiated with small group discussions and closed with class-wide discussion. During the second course period on each topic, students will discuss exercises in small groups and we will again close with class-wide discussion of lingering questions.
+
+## Readings
+
+One reading will be assigned each week. Students are expected to read thoroughly and submit one question about the week’s reading to the course website by the day prior to the first course meeting for that topic at 9am (on a typical week, this will be Monday at 9am). Please reference the page, column, and line number that motivated your question.
+
+## Exercises
+
+Each week, students will complete an exercise outside of class to be discussed during the second course meeting on each topic. Students are expected to submit written answers to the exercise questions prior to that course meeting (typically Thursdays). Collaboration on the exercises is encouraged, but all students must submit individual answers to the exercise questions. Exercises will be graded for completion.
+
+## Midterm Exam
+
+The course will contain one mid-term exam. The exam is designed to require between 1 and 3 hours to complete, however, students will be given 4 days to complete the exam to allow for nonstandard schedules during the pandemic. The exam will be “open book,” but no collaboration will be allowed. 
+
+*Important*: Note that this year's exam will be distributed on **March 19th at 5pm and will be due on March 23rd at 5pm**. Please let the instructors know immediately if you have a conflict with these dates.
+
+## Final Project
+
+Students will work in groups of 3 students to write a letter to the editor on any methodological topic in epidemiology. Letters should be formatted for the American Journal of Epidemiology (see [AJE Author Instructions](https://academic.oup.com/aje/pages/Instructions_To_Authors)) and will be due on the last day of class (May 4th) at 5pm. Students should submit the names of their group members and proposed topic by 5pm on Thursday, April 8th.
+
+## Grading
+
+The final grade will be based on completion of the weekly exercises (30%), the midterm exam (40%), the final project (20%), and class participation (10%).
+
+```{r assignments-grades, include=FALSE}
+
+grading <- tribble(
+  ~Grade, ~Range, 
+  "H",  "[90, 100]",
+  "P", "[70, 90)", 
+  "L", "[60, 70)", 
+  "F",  "[0, 60)", 
+)
+```
+
+ 
+
+<div class="centered-table">
+
+
+
+```{r show-grades-table, echo=FALSE, results="asis"}
+grading %>%
+  pandoc.table(justify = "ll", 
+               col.names = c("Grade", "Range"))
+```
+
+<div>
+
+In 2021, by direction of the SPH, any student earning a grade corresponding to an `L` in the table will automatically receive a `P`.
+
+## Office Hours
+
+Teaching assistants will hold at least one regularly scheduled help session per week for students to ask questions and seek general assistance with the course, and be available by email. Please check the Teams site for up-to-date information on office hours. Instructors welcome email, and will be available by appointment.
+
+## Software
+
+This course is software agnostic. That means that you may use any type of statistical software you like to complete the exercises. Example code will be provided in [SAS](https://www.sas.com) and/or [R](https://www.r-project.org/). 
+
+## This year
+
+The past year has been tumultuous. The pandemic and political situation have added a great deal of stress to the beginning of 2021. In this course, we strive to create an atmosphere that encourages learning and exploration of ideas without compounding that stress. Please contact the instructors or TAs with any concerns. Above all, **remember to be kind to yourself and others** as we navigate the coming months.
+
+## Accessibility Resources (ARS)
+
+The University of North Carolina at Chapel Hill facilitates the implementation of reasonable accommodations, including resources and services, for students with disabilities, chronic medical conditions, a temporary disability or pregnancy complications resulting in barriers to fully accessing University courses, programs and activities.
+Accommodations are determined through the Office of Accessibility Resources and Service (ARS) for individuals with documented qualifying disabilities in accordance with applicable state and federal laws. See the [ARS Website](https://ars.unc.edu) for contact information or email ars@unc.edu.
+ 
+## Counseling and Psychological Services (CAPS)
+
+CAPS is strongly committed to addressing the mental health needs of a diverse student body through timely access to consultation and connection to clinically appropriate services, whether for short or long-term needs. Go to their [website](https://caps.unc.edu/) or visit their facilities on the third floor of the Campus Health Services building for a walk-in evaluation to learn more. 
+
+## Title IX Resources
+
+Any student who is impacted by discrimination, harassment, interpersonal (relationship) violence, sexual violence, sexual exploitation, or stalking is encouraged to seek resources on campus or in the community. Please contact the Director of Title IX Compliance (Adrienne Allison – Adrienne.allison@unc.edu), Report and Response Coordinators in the Equal Opportunity and Compliance Office (reportandresponse@unc.edu), Counseling and Psychological Services (confidential), or the Gender Violence Services Coordinators (gvsc@unc.edu; confidential) to discuss your specific needs. Additional resources are available at safe.unc.edu.
+

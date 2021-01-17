@@ -1,0 +1,19 @@
+---
+title: "Schedule"
+slug: schedule
+---
+
+This course is divided into 2 main sections:
+
+1. Tools for survival analysis
+2. Causal inference
+
+with time at the beginning and end of the course to put these tools into the context of asking and answering important public health questions.
+
+This page provides quick links to the [readings](/readings/) <i class="fas fa-book-reader"></i>, [lecture materials](/content/) <i class="fas fa-laptop-code"></i>, and [exercises](https://www.sakai.unc.edu) <i class="fas fa-pencil-ruler"></i>.
+
+<!-- Each topic will be covered over 2 class periods. Please complete the reading and submit your question by 9am on the day before the *first* of the two class periods (generally a Tuesday).  -->
+
+<!-- Exercises are due by 3pm on the day of the *second* of the two class periods (generally a Thursday). -->
+
+`r blogdown::shortcode("schedule")`

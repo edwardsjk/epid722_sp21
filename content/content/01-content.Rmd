@@ -1,0 +1,94 @@
+---
+title: "L1: Questions and time in epidemiologic studies "
+linktitle: "1: Questions and time in epidemiologic studies "
+date: "2021-01-19"
+start_date: "2021-01-19"
+end_date: "2021-01-21"
+menu:
+  content:
+    parent: Course content
+    weight: 1
+type: docs
+bibliography: "../../static/bib/references.bib"
+csl: "../../static/bib/chicago-syllabus-no-bib.csl"
+slides: "01-slides"
+output:
+  blogdown::html_page:
+    toc: true
+---
+
+```{r slides-videos, echo=FALSE, include=FALSE}
+source(here::here("R", "slide-tabs.R"))
+source(here::here("R", "youtube-playlist.R"))
+
+playlist_id <- "PLS6tnpTr39sHcnk9KcoQVzDywxWRzVWHC"
+
+slide_details <- tibble::tribble(
+    ~title, ~slide, ~active,
+   "Introduction", "1", TRUE,
+   "Questions and time in epidemiology", "ds-ps", FALSE
+)
+```
+
+## Readings
+
+- The [syllabus](/syllabus/) page for this class
+- Cole SR, Hudgens MG, Brookhart MA, Westreich D. [Risk](https://academic-oup-com.libproxy.lib.unc.edu/aje/article/181/4/246/122265) Am J Epidemiol. 2015 Feb 15;181(4):246-50 
+
+## Slides
+
+Below are links to the two sets of slides used this week: an introduction to the course and Lecture 1. You can download each slide deck individually by clicking on the image of the title slide for each course session, or all slides by clinking the download link below.
+
+`r blogdown::shortcode("slide-buttons")`
+
+[![Introduction](/slides/01-slidesa.png){width=49%}](/slides/01-slidesa.pdf)
+[![Introduction](/slides/01-slidesb.png){width=49%}](/slides/01-slidesb.pdf)
+
+## Notes
+
+### Notation
+
+Everyone in this course has the preparation required to master the material presented. There is no advanced math in this class, but you may see notation you have not seen before. Get in the habit of translating *all* notation you come across in this course into English language sentences and **ask questions** about notation that is unfamiliar.
+
+Some examples:
+
+$\sum_{i=1}^nX_i$: Sum $X_i$ over all units (up to unit $n$) indexed by $i$
+
+$\prod_{k=1}^m d_k$: multiply $d$ over all units (up to unit $m$) indexed by $k$
+
+### Line diagrams
+
+Drawing line diagrams is a great skill to develop an understanding of the importance of time scales, censoring, and late entry. For extra practice, return to slide 34 of Thursday's slide deck and draw a line diagram with *time since entry into HIV care* on the $x$-axis and study id on the $y$-axis. What happens to people who enter care in January 2018 and survive until the study closes on December 31, 2020?
+
+For `R` code to produce line diagrams, please see the [Resources](/example/linediagrams/) section of the site.
+
+## Videos
+
+Recordings of lectures are available on the EPID 722 [Sakai](https://www.sakai.unc.edu) site.
+
+## Optional readings
+
+Further reading about time in epidemiologic research
+
+- <i class="fas fa-book"></i> [Samet JM. Concepts of time in clinical research. Annals of internal medicine. 2000 Jan 4;132(1):37-44.](https://www-acpjournals-org.libproxy.lib.unc.edu/doi/full/10.7326/0003-4819-132-1-200001040-00007)
+
+Optional reading (for fun) about learning science and math
+
+- <i class="fas fa-book"></i> [Hamming RW. Mathematics on a distant planet. The American Mathematical Monthly. 1998 Aug 1;105(7):640-50.](https://www.tandfonline.com/doi/abs/10.1080/00029890.1998.12004938)
+<!-- - <i class="fas fa-book"></i> [Chapter 1](/content/readings/Hamming1.pdf) in *The Art of Doing Science and Engineering* by Richard Hamming -->
+
+
+## Exercise
+
+There is no exercise this week. If you struggled with the line diagrams during Thursday's lecture, take some time to practice by repeating the examples we worked through in class. Interested in making your own line diagrams in R? See the [code](/example) in the Resources section.
+
+## Questions
+
+Please use the form below to submit your questions about this week's reading.
+
+*NOTE*: Most weeks, questions will be due by Monday at 9am. However, this week, you have until Thursday at 3pm to submit your question. We will address any themes running though the questions next week.
+
+<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeO0Yg2oOYu3lghirz0FjTfIvcvqWLRXNGTQEFMlGkxw0KVVQ/viewform?embedded=true" width="640" height="594" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+
+
+

@@ -1,0 +1,51 @@
+main:
+  - name: Syllabus
+    url: /syllabus/
+    weight: 1
+  - name: Schedule
+    url: /schedule/
+    weight: 2
+  - name: Content
+    url: /content/
+    weight: 3
+  - name: Readings
+    url: /readings/
+    weight: 4
+  - name: Resources
+    url: /example/
+    weight: 5
+  - name: '<i class="fas fa-users"></i>'
+    url: "https://teams.microsoft.com/"
+    weight: 6
+  - name: Sakai
+    url: https://sakai.unc.edu/
+    weight: 7
+
+content:
+  - name: Overview
+    weight: 1
+  # - name: Course content
+  #   weight: 2
+# example:
+#   - name: Overview
+#     weight: 1
+#   - name: Simulated data
+#     weight: 2
+#   - name: Examples
+#     weight: 3
+# assignment:
+#   - name: Assignments
+#     weight: 1
+#   - name: Other projects
+#     weight: 2
+#   - name: Problem sets
+#     weight: 3
+#   - name: Evaluation
+#     weight: 4
+# resource:
+#   - name: Resources
+#     weight: 1
+#   - name: Study guides
+#     weight: 2
+#   - name: Guides
+#     weight: 3

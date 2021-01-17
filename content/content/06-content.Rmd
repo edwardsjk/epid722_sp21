@@ -1,0 +1,52 @@
+---
+title: "Competing events"
+linktitle: "6: Competing events"
+date: "2021-02-25"
+start_date: "2021-02-25"
+end_date: "2021-03-02"
+menu:
+  content:
+    parent: Course content
+    weight: 6
+type: docs
+bibliography: "../../static/bib/references.bib"
+csl: "../../static/bib/chicago-syllabus-no-bib.csl"
+slides: "06-slides"
+output:
+  blogdown::html_page:
+    toc: true
+---
+
+## Readings
+
+<i class="fas fa-book"></i> Edwards JK, Hester LL, Gokhale M, et al. [Methodologic Issues when Estimating Risks in Pharmacoepidemiology](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5557056/). Current Epidemiology Reports. 2016;3(4):285–296. 
+
+
+## Slides
+
+The slides for today's class are available in the class Teams/Sharepoint folder.
+
+[![L6](/slides/02-slides.png){width=49%}](https://adminliveunc.sharepoint.com/sites/EPID7222021/Class%20Materials/Forms/AllItems.aspx?newTargetListUrl=%2Fsites%2FEPID7222021%2FClass%20Materials&viewpath=%2Fsites%2FEPID7222021%2FClass%20Materials%2FForms%2FAllItems%2Easpx&viewid=23791aee%2D5f6d%2D4b22%2Da7b3%2D738269b4e786&id=%2Fsites%2FEPID7222021%2FClass%20Materials%2FSlides)
+
+## Videos
+
+Recordings of lectures are available on the EPID 722 [Sakai](https://www.sakai.unc.edu) site.
+
+
+## Exercise
+
+This week's exercise is available on the EPID 722 [Teams](https://teams.microsoft.com) site. Please note that you will need to download the dataset from the data folder. The exercise questions can be found under `/Class Materials/Exercises/Exercise 6/Exercise 6.docx`. Sample `SAS` and `R` code can be found in the same folder.
+
+
+## Optional readings
+
+Below are some additional readings about competing events
+
+### "Traditional" readings
+
+- <i class="fas fa-book"></i> Andersen PK, Geskus RB, de Witte T, Putter H. Competing risks in epidemiology: possibilities and pitfalls. International journal of epidemiology. 2012 Jun 1;41(3):861-70.
+- <i class="fas fa-book"></i> Lau B, Cole SR, Gange SJ. Competing risk regression models for epidemiologic data. American journal of epidemiology. 2009 Jul 15;170(2):244-56.
+
+### "Modern" readings
+- <i class="fas fa-book"></i> Cole SR, Lau B, Eron JJ, Brookhart MA, Kitahata MM, Martin JN, Mathews WC, Mugavero MJ. Estimation of the standardized risk difference and ratio in a competing risks framework: application to injection drug use and progression to AIDS after initiation of antiretroviral therapy. American journal of epidemiology. 2015 Feb 15;181(4):238-45.
+- <i class="fas fa-book"></i> Young JG, Stensrud MJ, Tchetgen Tchetgen EJ, Hernán MA. A causal framework for classical statistical estimands in failure‐time settings with competing events. Statistics in Medicine. 2020 Apr 15;39(8):1199-236.

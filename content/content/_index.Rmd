@@ -1,0 +1,17 @@
+---
+title: 
+menu:
+  content:
+    parent: Overview
+    weight: 1
+type: docs
+weight: 1
+---
+
+In the linked pages, you will find materials for each week of the course. You can use these pages to 
+
+1. Access required readings
+2. Submit *questions* about the readings to the teaching team (recall, questions about each reading are due to the teaching team by 9am on the day before the first lecture on a topic)
+3. Download lecture slides
+4. Find notes related to each lecture
+

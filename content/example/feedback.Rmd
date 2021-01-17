@@ -1,0 +1,22 @@
+---
+title: "Course feedback"
+linktitle: "Course feedback"
+output:
+  blogdown::html_page:
+    toc: true
+    toc_depth: 1
+menu:
+  example:
+    parent: Other
+    weight: 1
+type: docs
+editor_options: 
+  chunk_output_type: console
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfjObvqf6z5QG6ZNGXCdNAjdZkGmqmu31UFwyhdybeaUZIwkA/viewform?embedded=true" width="640" height="403" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>

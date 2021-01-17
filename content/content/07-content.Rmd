@@ -1,0 +1,59 @@
+---
+title: "Comparing hazards and survival times"
+linktitle: "7: Comparing hazards and survival times"
+date: "2021-03-04"
+start_date: "2021-03-04"
+end_date: "2021-03-09"
+menu:
+  content:
+    parent: Course content
+    weight: 7
+type: docs
+bibliography: "../../static/bib/references.bib"
+csl: "../../static/bib/chicago-syllabus-no-bib.csl"
+slides: "07-slides"
+output:
+  blogdown::html_page:
+    toc: true
+---
+
+
+## Readings
+
+- <i class="fas fa-file-pdf"></i> Hernán MA. [The hazards of hazard ratios](https://journals.lww.com/epidem/Fulltext/2010/01000/The_Hazards_of_Hazard_Ratios.4.aspx). Epidemiology (Cambridge, Mass.). 2010;21(1):13–5.
+
+
+## Slides
+
+The slides for today's class are available here and on Sakai as a PDF.
+
+`r blogdown::shortcode("slide-buttons")`
+
+[![L2](/slides/07-slides.png){width=49%}](/slides/07-slides.pdf)
+
+
+## Notes
+
+Until this point in the course, we have focused on estimating risk in a single sample. With these skills in hand, you are well positioned to describe the "natural course" (i.e., what is going on in the world without any intervention) and to make simple (crude) comparisons between groups. 
+
+But, there are times you might wish to compare quantities other than risk (such as hazard functions or survival time distributions). Moreover, you may wish to account for confounding in such comparisons using regression models. 
+
+This week's topic is comparing hazards using the semiparametric Cox proportional hazars model. Earlier this semester, we compared survival times using parametric accelerated failure time (AFT) models. 
+
+After this lecture, take some time to reflect on the difference between **semiparametric** and **parametric** models.  
+
+## Videos
+
+Recordings of lectures are available on the EPID 722 [Sakai](https://www.sakai.unc.edu) site.
+
+
+## Exercise
+
+This week's exercise is available on the EPID 722 [Teams](https://teams.microsoft.com) site. Please note that you will need to download the dataset from the data folder. The exercise questions can be found under `/Class Materials/Exercises/Exercise 7/Exercise 7.docx`. Sample `SAS` and `R` code can be found in the same folder.
+
+## Optional Reading
+
+This lecture is intended to give you an overview of Cox models. For more "nuts and bolts" details, I recommend the following reading.
+
+<!-- - <i class="fas fa-file-pdf"></i> Chapter 4 of "Survival Analysis Using SAS, Second Edition" by Paul Allison (PDF available from UNC library) -->
+- <i class="fas fa-file-pdf"></i> Chapter 5 of "Survival Analysis Using SAS, Second Edition" by Paul Allison (PDF available from UNC library)

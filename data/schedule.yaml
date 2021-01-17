@@ -1,0 +1,110 @@
+lessons:
+  - title: '<span class="fake-header-table">Introduction</span>'
+    header: True
+
+  - title: '<i class="fas fa-university"></i> **Questions and time in epidemiologic studies**'
+    date: "Jan 19 & 21"
+    reading: "academic-oup-com.libproxy.lib.unc.edu/aje/article/181/4/246/122265"
+    class: "01-content"
+    assignment: "01-ex"
+    
+  - title: '<span class="fake-header-table">Tools for Survival Analysis</span>'
+    header: True
+
+  - title: '<i class="fas fa-university"></i> **Nonparametric estimators of risk**'
+    date: "Jan 26 & 28"
+    reading: "oce-ovid-com.libproxy.lib.unc.edu/article/00002030-201010230-00001/HTML"
+    class: "02-content"
+    assignment: "01-ex"
+
+  - title: '<i class="fas fa-university"></i> **Parametric estimtors of risk**'
+    date: "Feb 2 & 4"
+    reading: "link-springer-com.libproxy.lib.unc.edu/article/10.1186/s12874-018-0605-8"
+    class: "03-content"
+    assignment: " "
+    
+  - title: '<i class="fas fa-university"></i> **Generalizability**'
+    date: "Feb 9 & 11"
+    reading: "academic-oup-com.libproxy.lib.unc.edu/aje/article/172/1/107/82724"
+    class: "04-content"
+    assignment: " "
+    
+  - title: "Wellness day"
+    date: "Feb 16"
+    
+    
+  - title: '<i class="fas fa-university"></i> **(Out) Selection Bias**'
+    date: "Feb 18 & 23"
+    reading: "oce-ovid-com.libproxy.lib.unc.edu/article/00001648-201601000-00014/HTML"
+    class: "05-content"
+    assignment: " "
+    
+  - title: '<i class="fas fa-university"></i> **Competing Events**'
+    date: "Feb 25 & Mar 2"
+    reading: "www.ncbi.nlm.nih.gov/pmc/articles/PMC5557056/"
+    class: "06-content"
+    assignment: " "
+    
+  - title: '<i class="fas fa-university"></i> **Comparing hazards and survival times**'
+    date: "Mar 4 & 9"
+    reading: "journals.lww.com/epidem/Fulltext/2010/01000/The_Hazards_of_Hazard_Ratios.4.aspx"
+    class: "07-content"
+    assignment: " "
+        
+  - title: "Wellness day"
+    date: "Mar 11"
+    
+  - title: "Recap Part 1"
+    date: "Mar 16 & 18"
+    
+  - title: '<i class="fas fa-star"></i> **Midterm Exam**'
+    date: "Mar 22-23"
+    
+  - title: "Exam Postmortem"
+    date: "Mar 24"
+
+
+  - title: '<span class="fake-header-table">Causal Inference</span>'
+    header: True
+    
+  - title: '<i class="fas fa-university"></i> **Estimating causal effects (1)**'
+    date: "Mar 30 & Apr 1"
+    reading: "www-sciencedirect-com.libproxy.lib.unc.edu/science/article/pii/S0169260703001378"
+    #class: "08-content"
+    assignment: " "
+    
+  - title: '<i class="fas fa-university"></i> **Estimating causal effects (2)**'
+    date: "Apr 6 & 8"
+    reading: "academic-oup-com.libproxy.lib.unc.edu/aje/article/169/9/1140/125286"
+    #class: "09-content"
+    assignment: " "
+    
+  - title: '<i class="fas fa-university"></i> **Simple time-varying exposures**'
+    date: "Apr 13 & 15"
+    reading: "09-reading"
+    #class: "10-content"
+    assignment: " "
+    
+
+  - title: '<i class="fas fa-university"></i> **Knowledge Synthesis**'
+    date: "Apr 20 & 22"
+    reading: "11-reading"
+    #class: "11-content"
+    assignment: " "
+    
+    
+  - title: '<i class="fas fa-university"></i> **Population Impact**'
+    date: "Apr 27"
+    reading: "12-reading"
+    #class: "12-content"
+    assignment: " "
+    
+  - title: '<span class="fake-header-table">Wrap-up</span>'
+    header: True
+    
+  - title: "Course Wrap-up"
+    date: "Apr 29"
+
+  - title: "**EPID 722 Symposium: Asking better questions**"
+    date: "May 4"
+

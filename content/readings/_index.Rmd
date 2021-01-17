@@ -1,0 +1,18 @@
+---
+title: "Readings"
+slug: readings
+---
+
+1. Cole SR, Hudgens MG, Brookhart MA, Westreich D. [Risk](https://academic-oup-com.libproxy.lib.unc.edu/aje/article/181/4/246/122265) Am J Epidemiol. 2015 Feb 15;181(4):246-50 
+2. 	Cole SR, Hudgens MG. [Survival analysis in infectious disease research: describing events in time](https://oce-ovid-com.libproxy.lib.unc.edu/article/00002030-201010230-00001/HTML): Aids. 2010;24(16):2423–2431. 
+3. 	Rudolph JE, Cole SR, Edwards JK. [Parametric assumptions equate to hidden observations: comparing the efficiency of nonparametric and parametric models for estimating time to AIDS or death in a cohort of HIV-positive women](https://link-springer-com.libproxy.lib.unc.edu/article/10.1186/s12874-018-0605-8). BMC Medical Research Methodology. 2018;18(1):142–142. 
+4. 	Cole SR, Stuart EA.[ Generalizing evidence from randomized clinical trials to target populations: The ACTG 320 trial](https://academic-oup-com.libproxy.lib.unc.edu/aje/article/172/1/107/82724). American journal of epidemiology. 2010;172(1):107–15. 
+5. 	Howe CJ, Cole SR, Lau B, et al. [Selection Bias Due to Loss to Follow Up in Cohort Studies](https://oce-ovid-com.libproxy.lib.unc.edu/article/00001648-201601000-00014/HTML). Epidemiology (Cambridge, Mass.). 2016;27(1):91–97. 
+6. 	Edwards JK, Hester LL, Gokhale M, et al. [Methodologic Issues when Estimating Risks in Pharmacoepidemiology](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5557056/). Current Epidemiology Reports. 2016;3(4):285–296. 
+7. 	Hernán MA. [The hazards of hazard ratios](https://journals.lww.com/epidem/Fulltext/2010/01000/The_Hazards_of_Hazard_Ratios.4.aspx). Epidemiology (Cambridge, Mass.). 2010;21(1):13–5.
+8. 	Cole SR, Hernán MA. [Adjusted survival curves with inverse probability weights. Computer methods and programs in biomedicine](https://www-sciencedirect-com.libproxy.lib.unc.edu/science/article/pii/S0169260703001378). 2004;75(1):45–9. 
+9. 	Ahern J, Hubbard A, Galea S. [Estimating the effects of potential public health interventions on population disease burden: a step-by-step illustration of causal inference methods](https://academic-oup-com.libproxy.lib.unc.edu/aje/article/169/9/1140/125286). American journal of epidemiology. 2009;169(9):1140–1147. 
+10. TBD
+11. TBD
+12. Westreich D, Edwards JK, Rogawski ET, Hudgens MG, Stuart EA, Cole SR. [Causal impact: epidemiological approaches for a public health of consequence](https://ajph-aphapublications-org.libproxy.lib.unc.edu/doi/10.2105/AJPH.2016.303226). American journal of public health. 2016 Jun;106(6):1011.
+ 
