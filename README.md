@@ -1,6 +1,6 @@
 # EPID 722: Advanced Epidemiologic Methods (Spring 2021)
 
-![Logo](/static/img/epid722-logo.png)
+![Logo](static/img/epid722logo.png)
 
 ## Theme
 
