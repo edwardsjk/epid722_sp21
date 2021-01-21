@@ -50,3 +50,10 @@ Below are some additional readings about competing events
 ### "Modern" readings
 - <i class="fas fa-book"></i> Cole SR, Lau B, Eron JJ, Brookhart MA, Kitahata MM, Martin JN, Mathews WC, Mugavero MJ. Estimation of the standardized risk difference and ratio in a competing risks framework: application to injection drug use and progression to AIDS after initiation of antiretroviral therapy. American journal of epidemiology. 2015 Feb 15;181(4):238-45.
 - <i class="fas fa-book"></i> Young JG, Stensrud MJ, Tchetgen Tchetgen EJ, Hernán MA. A causal framework for classical statistical estimands in failure‐time settings with competing events. Statistics in Medicine. 2020 Apr 15;39(8):1199-236.
+
+
+## Questions
+
+Please use the form below to submit your questions about this week's reading.
+
+<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSftyrq_UcWAS8BNLua1IELUJO8PLpwl_AMo3f0NgWItERhSiw/viewform?embedded=true" width="640" height="594" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>

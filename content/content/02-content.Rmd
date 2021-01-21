@@ -58,4 +58,13 @@ As a self check, reflect on how what you learned helps answer the following ques
 
 This week's exercise is available on the EPID 722 [Teams](https://teams.microsoft.com) site. Please note that you will need to download the dataset `base.dat`. The exercise questions can be found under `/Class Materials/Exercises/Exercise 2/Exercise 2.docx`. Sample `SAS` and `R` code can be found in the same folder.
 
+## Questions
+
+Please use the form below to submit your questions about this week's reading.
+
+*NOTE*: Please submit your question by Monday at 9am.
+
+<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdb3RZPu9Dfws19szDZ6yjocC9OGcgm07ZHMzl-05WSrsJ32w/viewform?embedded=true" width="640" height="594" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+
+
 

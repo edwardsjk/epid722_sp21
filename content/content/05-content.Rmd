@@ -36,3 +36,11 @@ Recordings of lectures are available on the EPID 722 [Sakai](https://www.sakai.u
 
 This week's exercise is available on the EPID 722 [Teams](https://teams.microsoft.com) site. Please note that you will need to download the dataset from the data folder. The exercise questions can be found under `/Class Materials/Exercises/Exercise 5/Exercise 5.docx`. Sample `SAS` and `R` code can be found in the same folder.
 
+
+## Questions
+
+Please use the form below to submit your questions about this week's reading.
+
+<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfB9e2Yw7n4uepwK5ThZCOlq76WSEj-nRHA9BnkOFWb_3zXrQ/viewform?embedded=true" width="640" height="594" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+
+

@@ -57,3 +57,10 @@ This lecture is intended to give you an overview of Cox models. For more "nuts a
 
 <!-- - <i class="fas fa-file-pdf"></i> Chapter 4 of "Survival Analysis Using SAS, Second Edition" by Paul Allison (PDF available from UNC library) -->
 - <i class="fas fa-file-pdf"></i> Chapter 5 of "Survival Analysis Using SAS, Second Edition" by Paul Allison (PDF available from UNC library)
+
+
+## Questions
+
+Please use the form below to submit your questions about this week's reading.
+
+<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfg4Qtvoz4h1Q0am2aZAgQY04V0bY38ZIH2OsuQ5in_omJMpQ/viewform?embedded=true" width="640" height="594" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
