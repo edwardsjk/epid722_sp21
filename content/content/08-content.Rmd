@@ -1,0 +1,74 @@
+---
+title: "L8: Potential outcomes and IPW "
+linktitle: "8: Potential outcomes and IPW "
+date: "2021-03-30"
+start_date: "2021-03-30"
+end_date: "2021-04-01"
+menu:
+  content:
+    parent: Course content
+    weight: 1
+type: docs
+bibliography: "../../static/bib/references.bib"
+csl: "../../static/bib/chicago-syllabus-no-bib.csl"
+slides: "08-slides"
+output:
+  blogdown::html_page:
+    toc: true
+---
+
+<!-- ```{r slides-videos, echo=FALSE, include=FALSE} -->
+<!-- source(here::here("R", "slide-tabs.R")) -->
+<!-- source(here::here("R", "youtube-playlist.R")) -->
+
+<!-- playlist_id <- "PLS6tnpTr39sHcnk9KcoQVzDywxWRzVWHC" -->
+
+<!-- slide_details <- tibble::tribble( -->
+<!--     ~title, ~slide, ~active, -->
+<!--    "Introduction", "1", TRUE, -->
+<!--    "Questions and time in epidemiology", "ds-ps", FALSE -->
+<!-- ) -->
+<!-- ``` -->
+
+## Readings
+
+- <i class="fas fa-book"></i> Cole SR, Hernán MA. [Adjusted survival curves with inverse probability weights. Computer methods and programs in biomedicine](https://www-sciencedirect-com.libproxy.lib.unc.edu/science/article/pii/S0169260703001378). 2004;75(1):45–9. 
+
+## Slides
+
+`r blogdown::shortcode("slide-buttons")`
+
+[![Introduction](/slides/08-slides.png){width=70%}](/slides/08-slides.pdf)
+
+
+## Notes
+
+This week's reading is an excellent introduction to IPW for survival functions. As you read, be sure you can answer the following questions:
+
+- Why was the paper written? What problem was it trying to solve?
+- What is the point of the first paragraph on page 46?
+- Why are non-parametric standardization and IPW infeasible in the presence of multiple or continuous covariates?
+- On page 46, what do they mean by “prior logistic regression models?”
+- Why use stabilized vs unstabilized weights? What is the difference?
+- What is the “pseudopopulation?”
+- What does the “+” mean in Table 1?
+- What is the point of Table 2?
+
+
+## Videos
+
+Recordings of lectures are available on the EPID 722 [Sakai](https://www.sakai.unc.edu) site.
+
+
+## Exercise
+
+Exercise 8 may be found on the course Teams site.
+
+## Questions
+
+Please use the form below to submit your questions about this week's reading.
+
+<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeP_UMVqioYOWQoi84ylD6ZckcXhjio1FMJoGRHQTspNAyOkw/viewform?embedded=true" width="640" height="594" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+
+
+
