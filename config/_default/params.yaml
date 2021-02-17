@@ -74,7 +74,7 @@ privacy_pack: false
 # Enable visitors to edit pages?
 #   `repo` defines the repository URL. `editable` defines which page types can be edited.
 edit_page:
-  repo_url: 'https://github.com/edwardsjk/epid722/epid722_2021'
+  repo_url: 'https://github.com/edwardsjk/epid722/epid722sp21'
   content_dir: ''
   repo_branch: master
   editable:
@@ -95,6 +95,7 @@ instructor:
   name: Dr. Jessie K. Edwards
   email: jessedwards@unc.edu
   url: "https://www.edwardsjk.com"
+  twitter: edwardsjk
   github: edwardsjk
   office: "2102A McGavran-Greenberg"
   contact_policy: >-
