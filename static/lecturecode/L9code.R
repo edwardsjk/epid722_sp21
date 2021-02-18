@@ -3,7 +3,6 @@ library(tidyverse)
 library(survival)
 library(splines)
 
-setwd("/Users/jkedwar/Box Sync/teaching/epid722/2021/lectures/L9")
 
 set.seed(234)
 n <- 1000
