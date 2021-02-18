@@ -33,21 +33,23 @@ lessons:
   - title: "Wellness day"
     date: "Feb 16"
     
+  - title: "Snow day"
+    date: "Feb 18"
     
   - title: '<i class="fas fa-university"></i> **(Out) Selection Bias**'
-    date: "Feb 18 & 23"
+    date: "Feb 23 & 25"
     reading: "oce-ovid-com.libproxy.lib.unc.edu/article/00001648-201601000-00014/HTML"
     class: "05-content"
     assignment: " "
     
   - title: '<i class="fas fa-university"></i> **Competing Events**'
-    date: "Feb 25 & Mar 2"
+    date: "Mar 2 & 4"
     reading: "www.ncbi.nlm.nih.gov/pmc/articles/PMC5557056/"
     class: "06-content"
     assignment: " "
     
-  - title: '<i class="fas fa-university"></i> **Comparing hazards and survival times**'
-    date: "Mar 4 & 9"
+  - title: '<i class="fas fa-university"></i> **Cox models (lecture)**'
+    date: "Mar 9"
     reading: "journals.lww.com/epidem/Fulltext/2010/01000/The_Hazards_of_Hazard_Ratios.4.aspx"
     class: "07-content"
     assignment: " "
@@ -55,8 +57,14 @@ lessons:
   - title: "Wellness day"
     date: "Mar 11"
     
+  - title: '<i class="fas fa-university"></i> **Cox models (discussion)**'
+    date: "Mar 16"
+    reading: "journals.lww.com/epidem/Fulltext/2010/01000/The_Hazards_of_Hazard_Ratios.4.aspx"
+    class: "07-content"
+    assignment: " "
+    
   - title: "Recap Part 1"
-    date: "Mar 16 & 18"
+    date: "Mar 18"
     
   - title: '<i class="fas fa-star"></i> **Midterm Exam**'
     date: "Mar 19-23"
@@ -71,13 +79,13 @@ lessons:
   - title: '<i class="fas fa-university"></i> **Estimating causal effects (1)**'
     date: "Mar 30 & Apr 1"
     reading: "www-sciencedirect-com.libproxy.lib.unc.edu/science/article/pii/S0169260703001378"
-    #class: "08-content"
+    class: "08-content"
     assignment: " "
     
   - title: '<i class="fas fa-university"></i> **Estimating causal effects (2)**'
     date: "Apr 6 & 8"
     reading: "academic-oup-com.libproxy.lib.unc.edu/aje/article/169/9/1140/125286"
-    #class: "09-content"
+    class: "09-content"
     assignment: " "
     
   - title: '<i class="fas fa-university"></i> **Simple time-varying exposures**'
