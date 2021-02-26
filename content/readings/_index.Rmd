@@ -12,7 +12,7 @@ slug: readings
 7. 	Hernán MA. [The hazards of hazard ratios](https://journals.lww.com/epidem/Fulltext/2010/01000/The_Hazards_of_Hazard_Ratios.4.aspx). Epidemiology (Cambridge, Mass.). 2010;21(1):13–5.
 8. 	Cole SR, Hernán MA. [Adjusted survival curves with inverse probability weights. Computer methods and programs in biomedicine](https://www-sciencedirect-com.libproxy.lib.unc.edu/science/article/pii/S0169260703001378). 2004;75(1):45–9. 
 9. 	Ahern J, Hubbard A, Galea S. [Estimating the effects of potential public health interventions on population disease burden: a step-by-step illustration of causal inference methods](https://academic-oup-com.libproxy.lib.unc.edu/aje/article/169/9/1140/125286). American journal of epidemiology. 2009;169(9):1140–1147. 
-10. TBD
+10. Lu H, Cole SR, Westreich D, Hudgens MG, Adimora AA, Althoff KN, Silverberg MJ, Buchacz K, Li J, Edwards JK, Rebeiro PF. [Clinical Effectiveness of Integrase Strand Transfer Inhibitor–Based Antiretroviral Regimens Among Adults With Human Immunodeficiency Virus: A Collaboration of Cohort Studies in the United States and Canada](https://academic-oup-com.libproxy.lib.unc.edu/cid/advance-article/doi/10.1093/cid/ciaa1037/5891141?login=true). Clinical Infectious Diseases. 2020 Aug 11.
 11. TBD
 12. Westreich D, Edwards JK, Rogawski ET, Hudgens MG, Stuart EA, Cole SR. [Causal impact: epidemiological approaches for a public health of consequence](https://ajph-aphapublications-org.libproxy.lib.unc.edu/doi/10.2105/AJPH.2016.303226). American journal of public health. 2016 Jun;106(6):1011.
  

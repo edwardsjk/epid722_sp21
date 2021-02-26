@@ -1,9 +1,9 @@
 ---
 title: "Competing events"
 linktitle: "6: Competing events"
-date: "2021-02-25"
-start_date: "2021-02-25"
-end_date: "2021-03-02"
+date: "2021-03-02"
+start_date: "2021-03-02"
+end_date: "2021-03-04"
 menu:
   content:
     parent: Course content
@@ -45,11 +45,11 @@ Below are some additional readings about competing events
 ### "Traditional" readings
 
 - <i class="fas fa-book"></i> Andersen PK, Geskus RB, de Witte T, Putter H. Competing risks in epidemiology: possibilities and pitfalls. International journal of epidemiology. 2012 Jun 1;41(3):861-70.
-- <i class="fas fa-book"></i> Lau B, Cole SR, Gange SJ. Competing risk regression models for epidemiologic data. American journal of epidemiology. 2009 Jul 15;170(2):244-56.
+<!-- - <i class="fas fa-book"></i> Lau B, Cole SR, Gange SJ. Competing risk regression models for epidemiologic data. American journal of epidemiology. 2009 Jul 15;170(2):244-56. -->
 
 ### "Modern" readings
 - <i class="fas fa-book"></i> Cole SR, Lau B, Eron JJ, Brookhart MA, Kitahata MM, Martin JN, Mathews WC, Mugavero MJ. Estimation of the standardized risk difference and ratio in a competing risks framework: application to injection drug use and progression to AIDS after initiation of antiretroviral therapy. American journal of epidemiology. 2015 Feb 15;181(4):238-45.
-- <i class="fas fa-book"></i> Young JG, Stensrud MJ, Tchetgen Tchetgen EJ, Hernán MA. A causal framework for classical statistical estimands in failure‐time settings with competing events. Statistics in Medicine. 2020 Apr 15;39(8):1199-236.
+<!-- - <i class="fas fa-book"></i> Young JG, Stensrud MJ, Tchetgen Tchetgen EJ, Hernán MA. A causal framework for classical statistical estimands in failure‐time settings with competing events. Statistics in Medicine. 2020 Apr 15;39(8):1199-236. -->
 
 
 ## Questions
