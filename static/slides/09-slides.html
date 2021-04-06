@@ -45,7 +45,23 @@ class: left, middle, inverse, title-slide
 2. Variations
 3. Example
 ---
+&lt;img src="img/09/p1.png" width="100%" /&gt;
+---
+&lt;img src="img/09/p2.png" width="100%" /&gt;
+---
+&lt;img src="img/09/p3.png" width="100%" /&gt;
+---
+&lt;img src="img/09/p4.png" width="100%" /&gt;
+---
+&lt;img src="img/09/p5.png" width="100%" /&gt;
+---
+&lt;img src="img/09/p6.png" width="100%" /&gt;
 
+---
+&lt;img src="img/09/p7.png" width="100%" /&gt;
+
+
+---
 # Background
 
 ### The law of total probability
@@ -190,9 +206,9 @@ Finally, until week 11, will assume **no measurement error** of treatments, outc
 
 Recall that the fundamental problem of causal inference is that `\(Y^a\)` is missing when `\(A \ne a\)`. (Why?)
 
-When we use IP-weighting, we upweight those with `\(A=a\)` to have the same distribution of `\(W\)` as the entire study sample, just as we would ues IP-weighting to handle missing (factual) data.
+When we use IP-weighting, we upweight those with `\(A=a\)` to have the same distribution of `\(W\)` as the entire study sample, just as we would use IP-weighting to handle missing (factual) data.
 
-When we use g-formula, we *impute* `\(Y^a\)` for those with `\(A \ne a\)` after "training" our imputation model to predict `\(E(Y^a|W)\)` in the subset of data where `\(A=a\)`. 
+When we use g-formula, we *impute* `\(Y^a\)` after "training" our imputation model to predict `\(E(Y^a|W)\)` in the subset of data where `\(A=a\)`. 
 
 ---
 
@@ -387,22 +403,77 @@ eya1
 
 |  W|  A|  Y|  n|Y1 |Y0 |
 |--:|--:|--:|--:|:--|:--|
-|  0|  0|  0| 20|   |0  |
-|  0|  0|  1|  5|   |1  |
-|  0|  1|  0| 10|0  |   |
-|  0|  1|  1| 30|1  |   |
-|  1|  0|  0| 20|   |0  |
-|  1|  0|  1| 20|   |1  |
-|  1|  1|  0|  5|0  |   |
-|  1|  1|  1| 10|1  |   |
+|  0|  0|  0| 20|   |   |
+|  0|  0|  1|  5|   |   |
+|  0|  1|  0| 10|   |   |
+|  0|  1|  1| 30|   |   |
+|  1|  0|  0| 20|   |   |
+|  1|  0|  1| 20|   |   |
+|  1|  1|  0|  5|   |   |
+|  1|  1|  1| 10|   |   |
 
 ]
+
+`\(E(Y^1|W=w) = E(Y|A=1, W=w)\)`
+
+&lt;!-- `\(E(Y^1) = E(Y|W=1, A=1)P(W=1) + E(Y|W=0, A=1)P(W=0)\)` --&gt;
+---
+
+# Example
+
+.pull-left[
+
+
+```r
+eya1 &lt;- dat %&gt;% 
+  group_by(A,W) %&gt;% 
+  summarize(py = sum(n*Y)/sum(n))
+
+eya1
+```
+
+```
+## # A tibble: 4 x 3
+## # Groups:   A [2]
+##       A     W    py
+##   &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt;
+## 1     0     0 0.2  
+## 2     0     1 0.5  
+## 3     1     0 0.75 
+## 4     1     1 0.667
+```
+]
+
+.pull-right[
+
+|  W|  A|  Y|  n|   Y1|Y0 |
+|--:|--:|--:|--:|----:|:--|
+|  0|  0|  0| 20| 0.75|   |
+|  0|  0|  1|  5| 0.75|   |
+|  0|  1|  0| 10| 0.75|   |
+|  0|  1|  1| 30| 0.75|   |
+|  1|  0|  0| 20| 0.67|   |
+|  1|  0|  1| 20| 0.67|   |
+|  1|  1|  0|  5| 0.67|   |
+|  1|  1|  1| 10| 0.67|   |
+
+]
+
+`\(E(Y^1|W=w) = E(Y|A=1, W=w)\)`
+
+--
+
+`\(E(Y^1) = E(Y|W=1, A=1)P(W=1) + E(Y|W=0, A=1)P(W=0)\)`
+
+
 
 ---
 
 But toy examples only get us so far. 
 
 We usually have &gt;1 covariate in `\(W\)`, and covariates may be continuous. --&gt; simple tabular approaches will soon run into the curse of dimensionality.
+
+- Some cells (representing cross classifications of covariates) will have few or no exposed participants (or no participants at all)
 
 However, we can use parametric models to estimate `\(E(Y|A, W)\)`
 
@@ -474,6 +545,7 @@ dat2 &lt;- data.frame(dat, Y1 = y1, Y0 = y0)
 # Model specification
 
 Model specification is important.
+
 .pull-left[
 - Correct functional forms
 - Interaction terms
@@ -500,6 +572,8 @@ summary(mod_ms)$coefficients[,c(1:2)]
 
 
 ]
+
+--
 
 .pull-right[
 
@@ -595,20 +669,22 @@ We use estimates of `\(\hat{\beta}\)` to predict the probability of the outcome 
 
 `$$\eta_{ij}(1)=\textrm{expit}[\hat{\beta}_0 + \hat{\beta}_1g(j) + \hat{\beta}_2W_i + \hat{\beta}_3(1) + \hat{\beta_4}(1)W_i]$$`
 
---
+&lt;!-- -- --&gt;
 
-Note that we predict `\(\hat{\eta}_{ij}(1)\)` and `\(\hat{\eta}_{ij}(0)\)` **only** for time points `\(j\)` in which the participant had not yet had the outcome by time `\(j-1\)`.
-
---
-
-Note that we **do** predict `\(\hat{\eta}_{ij}(1)\)` and `\(\hat{\eta}_{ij}(0)\)` for time points that occur after a participant was censored in the observed data.
+&lt;!-- Note that we predict `\(\hat{\eta}_{ij}(1)\)` and `\(\hat{\eta}_{ij}(0)\)` **only** for time points `\(j\)` in which the participant had not yet had the outcome by time `\(j-1\)`. --&gt;
 
 --
 
-With `\(\hat{\eta}_{ij}(1)\)` and `\(\hat{\eta}_{ij}(0)\)` in  hand, we estimate risk under each plan as
+Note that we **do** predict `\(\hat{\eta}_{ij}(1)\)` and `\(\hat{\eta}_{ij}(0)\)` for time points that occur after a participant was censored or had the event in the observed data.
 
-`$$P(T^1\le t) = \prod_{j=1}^J [1 - \hat{\eta}_{ij}(1)]$$`
-`$$P(T^0\le t) = \prod_{j=1}^J [1 - \hat{\eta}_{ij}(0)]$$`
+--
+
+With `\(\hat{\eta}_{ij}(1)\)` and `\(\hat{\eta}_{ij}(0)\)` in  hand, we estimate the probability that person `\(i\)` has the event by time `\(t\)` under each plan as
+
+`$$P(T_i^1\le t) = \prod_{j=1}^J [1 - \hat{\eta}_{ij}(1)]$$`
+`$$P(T_i^0\le t) = \prod_{j=1}^J [1 - \hat{\eta}_{ij}(0)]$$`
+The counterfactual risk in the entire sample under plan `\(a\)` is then `\(1/n \sum_{i=1}^n P(T^a_i&lt;=t)\)`.
+
 ---
 
 # Method 2: Breslow estimator
@@ -618,6 +694,8 @@ Rather than estimate `\(P(Y_j=1|Y_{j-1}=0, W=w, A=a)\)` using pooled logistic re
 We will not go into depth on the details of the Breslow estimator here, but if you want to learn more, the paper by Lin is straightforward and helpful
 
 &gt; Lin DY. On the Breslow estimator. Lifetime data analysis. 2007 Dec 1;13(4):4
+
+--
 
 ### Overview
 
@@ -713,11 +791,11 @@ Say `\(A\)` is a continuous exposure and we want to estimate the effect of limit
 `$$\textrm{logit}(P(Y=1)) = \beta_0 + \beta_1g(A) + \beta_2W$$`
 --
 
-Now create new exposure under intervention:
+Now create new exposure under intervention, `\(A^{int}\)`:
 
-if `\(A&gt;5\)` then `\(A^{lim} = 5\)` &lt;-- everyone exposed to more than 5 units now gets 5 units
+if `\(A&gt;5\)` then `\(A^{int} = 5\)` &lt;-- everyone exposed to &gt; 5 units now gets 5 units
 
-if `\(A\le5\)` then set `\(A^{lim} = A\)`  &lt;-- those exposed to fewer than 5 units receive their original exposure
+if `\(A\le5\)` then `\(A^{int} = A\)`  &lt;-- those exposed to &lt; 5 units receive their original exposure
 
 `\(P(Y^{lim}=1) = \textrm{expit}(\hat{\beta}_0 + \hat{\beta}_1g(A^{int}) + \hat{\beta}_2W)\)` &lt;- risk under intervention `\(lim\)`
 
@@ -804,7 +882,7 @@ proc phreg data = mydat noprint;
 ]
 
 .pull-right[
-![](09-slides_files/figure-html/unnamed-chunk-15-1.png)&lt;!-- --&gt;
+![](09-slides_files/figure-html/unnamed-chunk-24-1.png)&lt;!-- --&gt;
 ]
 
 ---
@@ -838,7 +916,7 @@ run;
 ]
 
 .pull-right[
-![](09-slides_files/figure-html/unnamed-chunk-18-1.png)&lt;!-- --&gt;
+![](09-slides_files/figure-html/unnamed-chunk-27-1.png)&lt;!-- --&gt;
 ]
 
 ---
@@ -849,11 +927,12 @@ run;
 1. Expand dataset to have 1 record per person-week
 1. Fit pooled logistic regression model to person-week dataset 
 
-`\(\small P(Y=1|A, W, j) =\)`
-`\(\small \textrm{expit}(\beta_0 + \beta_1A + \beta_2 W + \beta_3AZ + \beta_4g(j))\)`
-3. Use estimates from model above to predict `\(P(Y=1|a, W, j) = \eta(j, a)\)`, where `\(j\)` indexes weeks
+`\(\small P(Y_j=1|A, W, Y_{j-1}=0) =\)`
+`\(\small \textrm{expit}(\beta_0 + \beta_1A + \beta_2 W + \beta_3AW + \beta_4g(j))\)`
+3. Use estimates from model above to predict `\(P(Y_j=1|a, W, Y_{j-1)=0}) = \eta(j, a)\)`, where `\(j\)` indexes weeks
 4. Compute `\(P(T^a \le j|W_i)\)` for each person
 `\(\small P(T^a \le t|W_i) = 1 - \prod_{j = 1}^t(1 - \eta(j, a))\)`
+5. Average across participants
 
 
 
@@ -863,7 +942,7 @@ run;
 ]
 
 .pull-right[
-![](09-slides_files/figure-html/unnamed-chunk-21-1.png)&lt;!-- --&gt;
+![](09-slides_files/figure-html/unnamed-chunk-30-1.png)&lt;!-- --&gt;
 ]
 
 ---
@@ -881,8 +960,13 @@ run;
 ]
 
 .pull-right[
-![](09-slides_files/figure-html/unnamed-chunk-23-1.png)&lt;!-- --&gt;
+![](09-slides_files/figure-html/unnamed-chunk-32-1.png)&lt;!-- --&gt;
 ]
+
+---
+class: inverse, center, middle
+
+### Questions?
 
 ---
 
